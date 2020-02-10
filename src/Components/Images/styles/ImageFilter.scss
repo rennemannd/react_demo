@@ -2,12 +2,15 @@ $primary: #11998e;
 $secondary: #38ef7d;
 $white: #fff;
 $gray: #9b9b9b;
+$bg: rgba(58, 133, 133, 0.3);
+
 .form__group {
   position: relative;
   padding: 15px 0 0;
   margin-top: 10px;
   width: 50%;
   display: flex;
+  transform: translateX(50%);
 }
 
 .form__field {
@@ -65,4 +68,8 @@ $gray: #9b9b9b;
   &:required, &:invalid {
     box-shadow: none;
   }
+}
+
+body {
+  background-color: $bg;
 }
